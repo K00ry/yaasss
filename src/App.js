@@ -1,27 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Toolbar from './components/toolbar';
+import MainBody from './components/mainBody/mainBody';
+import  Background from './components/background';
+import ScrollTrigger from 'scrolltrigger-classes'
+import './App.scss';
+
+
+
+
+
 
 class App extends Component {
+
+    componentDidMount(){
+            document.addEventListener('DOMContentLoaded', function(){
+            let trigger = new ScrollTrigger();
+        });
+    }
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      return (
+          <div className="App">
+              <Toolbar/>
+              <Background/>
+              <MainBody/>
+
+          </div>
+      );
   }
 }
 

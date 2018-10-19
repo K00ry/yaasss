@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 168.72 168.72">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-1243.07" y1="499.89" x2="-1243.07" y2="306.4" gradientTransform="translate(1327.5 -320.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.1" stop-color="#ffd879"/>
+      <stop offset="0.15" stop-color="#fccb76"/>
+      <stop offset="0.26" stop-color="#f5aa6c"/>
+      <stop offset="0.4" stop-color="#e9755e"/>
+      <stop offset="0.45" stop-color="#e45f58"/>
+      <stop offset="0.68" stop-color="#d22a9c"/>
+      <stop offset="1" stop-color="#6968df"/>
+    </linearGradient>
+  </defs>
+  <title>home-Artboard 5</title>
+  <g id="Icons">
+    <g id="Icons-2" data-name="Icons">
+      <g>
+        <circle cx="84.43" cy="84.29" r="84.43" style="fill: url(#linear-gradient)"/>
+        <path d="M84.43,104.74a20.45,20.45,0,1,1,20.45-20.45A20.47,20.47,0,0,1,84.43,104.74Zm0-35.39A14.94,14.94,0,1,0,99.37,84.29,15,15,0,0,0,84.43,69.35Z" style="fill: #fff"/>
+        <circle cx="107.8" cy="61.68" r="2.54" style="fill: #fff"/>
+        <path d="M101.43,126.23H63.65a22.38,22.38,0,0,1-22.38-22.38V66.07A22.38,22.38,0,0,1,63.65,43.69h37.78a22.38,22.38,0,0,1,22.38,22.38v37.78A22.38,22.38,0,0,1,101.43,126.23ZM46.77,66.07v37.78a16.88,16.88,0,0,0,16.88,16.88h37.78a16.88,16.88,0,0,0,16.88-16.88V66.07a16.88,16.88,0,0,0-16.88-16.88H63.65A16.88,16.88,0,0,0,46.77,66.07Z" style="fill: #fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
