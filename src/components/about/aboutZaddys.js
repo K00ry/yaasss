@@ -22,25 +22,25 @@ const About = () => {
         </div>
         <Grid className="zaddys" >
             <Row className="zaddys_block" >
-                <Col  xs={12} sm={6} md={3} className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
+                <Col  xs={12} sm={6}  className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
 
 
-                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/1.jpg'} alt="cover for Full Moon Junkies">
+                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/1-l.jpg'} alt="cover for Full Moon Junkies">
                         <h3 className="zaddys_block__item--title text-center" >Dr. Feel Awful / bass & vocals</h3>
                     </Thumbnail>
                 </Col>
-                <Col xs={12} sm={6} md={3} className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
-                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/2.jpg'} alt="cover for song money">
+                <Col xs={12} sm={6}  className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
+                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/2-l.jpg'} alt="cover for song money">
                         <h3 className="zaddys_block__item--title text-center" >Rex Malaria / guitar & vocals</h3>
                     </Thumbnail>
                 </Col>
-                <Col  xs={12} sm={6} md={3} className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
-                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/3.jpg'} alt="cover for Full Moon Junkies">
+                <Col  xs={12} sm={6}  className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
+                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/3-l.jpg'} alt="cover for Full Moon Junkies">
                         <h3 className="zaddys_block__item--title text-center" >Boo Bubbles / guitar  </h3>
                     </Thumbnail>
                 </Col>
-                <Col xs={12} sm={6} md={3} className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
-                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/4.jpg'} alt="cover for song money">
+                <Col xs={12} sm={6}  className="zaddys_block__item" data-scroll="centerVertical,once,toggle(.scaleDownIn, .scaleDownOut)">
+                    <Thumbnail src={process.env.PUBLIC_URL + 'img/closeups/4-l.jpg'} alt="cover for song money">
                         <h3 className="zaddys_block__item--title text-center" >LePsychoPapaya / drums </h3>
                     </Thumbnail>
 
