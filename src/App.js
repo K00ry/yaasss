@@ -14,7 +14,7 @@ class App extends Component {
 
     componentDidMount(){
             document.addEventListener('DOMContentLoaded', function(){
-            let trigger = new ScrollTrigger();
+             new ScrollTrigger();
         });
     }
   render() {

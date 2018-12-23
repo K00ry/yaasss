@@ -1,6 +1,6 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
-import {Grid,Row,Col,Thumbnail} from 'react-bootstrap';
+// import {Grid,Row,Col,Thumbnail} from 'react-bootstrap';
 import About from '../about/aboutZaddys';
 import Music from '../music/music';
 
