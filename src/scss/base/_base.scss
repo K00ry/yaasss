@@ -91,7 +91,7 @@
 
 .navbar {
   margin: 0;
-  background: #f4d6da;
+  background: $pink;
   border: none;
 }
 .navbar-default .navbar-brand {
@@ -179,7 +179,7 @@
 .zaddys{
   background: $skin-color;
   margin: 0;
-  padding:  0;
+  //padding:  0;
   width: 100%;
   background: $pink;
 .zaddys_block {
@@ -203,7 +203,8 @@
 .music{
   background: $skin-color;
   margin: 0;
-  padding: 3em 0;
+  padding-top: 3em;
+  //padding: 3em 0;
   width: 100%;
  background: $pink;
   .music_block{
@@ -218,9 +219,7 @@
    .music_block__item--title{
      @include font-fam-size(2em, $font-1, 500, $text-black);
    }
-    //.music_block__item--description{
-    //  @include font-fam-size(1em, $font-2, 500, $text-black);
-    //}
+
 
 
   }

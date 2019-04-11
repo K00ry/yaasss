@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node-sass": "^4.9.4",
-    "react": "^16.5.2",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",
-    "react-dom": "^16.5.2",
-    "react-parallax": "^2.0.0",
-    "react-scripts": "2.0.5",
-    "react-slideshow-image": "^1.0.3",
+    "react-dom": "^16.8.6",
+    "react-parallax": "^2.2.0",
+    "react-scripts": "^2.1.8",
+    "react-slideshow-image": "^1.1.5",
     "scrolltrigger-classes": "^0.3.6"
   },
   "scripts": {
