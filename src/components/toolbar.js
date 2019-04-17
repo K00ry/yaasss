@@ -1,34 +1,28 @@
 import React from 'react';
-import {Nav, Navbar, NavItem} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 
 
 const Toolbar = () => {
     return (
-        <Navbar collapseOnSelect fixedTop>
-            <Navbar.Header>
-                <Navbar.Brand>
-                    <a href="#brand">YAASSS</a>
-                </Navbar.Brand>
-                <Navbar.Toggle/>
-            </Navbar.Header>
-            <Navbar.Collapse>
-                <Nav pullRight>
-                    <NavItem eventKey={1} href="#">
-                        ABOUT ZADDY'Z
-                    </NavItem>
-                    <NavItem eventKey={2} href="#">
-                        MUSIC
-                    </NavItem>
-                </Nav>
-                <Nav pullRight>
-                    <NavItem eventKey={1} href="#">
-                        SHOWS
-                    </NavItem>
 
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <Navbar collapseOnSelect expand="lg"  >
+        <Navbar.Brand href="#home">YAASSS</Navbar.Brand>
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+
+        </Nav>
+        <Nav>
+            <Nav.Link href="#features">ABOUT ZADDY'Z</Nav.Link>
+            <Nav.Link href="#pricing">MUSIC</Nav.Link>
+            <Nav.Link href="#deets">SHOWS</Nav.Link>
+        </Nav>
+    </Navbar.Collapse>
+</Navbar>
     );
 };
 
 export default Toolbar;
+
+
+

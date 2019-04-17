@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
-    "react-bootstrap": "^0.32.4",
+    "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-parallax": "^2.2.0",
     "react-scripts": "^2.1.8",
-    "react-slideshow-image": "^1.1.5",
     "scrolltrigger-classes": "^0.3.6"
   },
   "scripts": {
