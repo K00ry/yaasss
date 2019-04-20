@@ -1,31 +1,16 @@
 import React, {Component} from 'react';
 import { Row} from "react-bootstrap";
 import MusicCards from './musicCards'
-import axios from 'axios';
+// import axios from 'axios';
+import {connect} from 'react-redux';
+import {initFetch} from '../../store/actions/action'
 
 class Music extends Component {
-
-    state = {
-        musicCards :[],
-    };
-
-
 
 
 
                 componentDidMount() {
-                    const url = "https://yaasss-cms.herokuapp.com/music";
-                    const localUrl ="http://localhost:1337/music";
-                    axios.get(url).then(response =>{
-                        console.log(response.data);
-                        this.setState({
-                            musicCards: response.data
-                        })
-                    }).catch(err =>{
-                        console.log(err);
-                    })
-
-
+                    this.props.init();
                 }
 
     render() {
@@ -35,7 +20,9 @@ class Music extends Component {
         return (
             <div className="music" >
                 <Row className="music_block" >
-                    {this.state.musicCards.map(card => <MusicCards key={card._id}
+
+                    {/*<button onClick={this.props.init}> sallam</button>*/}
+                    {this.props.musicCards.map(card => <MusicCards key={card._id}
                                                                   name={card.Name}
                                                                    img={card.img.url}
                                                                   description={card.description}
@@ -47,5 +34,16 @@ class Music extends Component {
         );
     }
 }
+const mapStateToProps = (state) => {
+    return{
+        musicCards: state.musicCards
+    }
+};
+const mapDispatchToProps = (dispatch) => {
+    return{
+        init:() => dispatch(initFetch())
+    }
 
-export default Music;
+
+};
+export default connect(mapStateToProps,mapDispatchToProps)(Music);
