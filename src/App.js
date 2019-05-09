@@ -11,7 +11,9 @@ import './App.scss';
 
 
 
+
 class App extends Component {
+
 
     componentDidMount(){
             document.addEventListener('DOMContentLoaded', function(){

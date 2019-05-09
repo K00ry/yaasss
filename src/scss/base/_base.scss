@@ -3,18 +3,9 @@
 }
 
 body{
-
 background-color: $pink;
 }
 
-
-
-
-
-.jumbo{
-  //position: relative ;
-
-}
 .slider {
   //position: absolute ;
   position: relative ;
@@ -198,7 +189,8 @@ background-color: $pink;
 
 
 .main-page-about{
-  background: $skin-color;
+  background: $skin-color url("./svg/half-brown.svg") no-repeat center  ;
+  background-size: cover;
 
   margin: 0;
   padding: 0;
@@ -213,9 +205,14 @@ background-color: $pink;
   }
   .main-page-about__p{
     @include font-fam-size(2em, asli-3, 500, $main-black);
-    text-align: center;
-    margin: 0;
-    padding:  1em;
+    text-align: left;
+    padding: 0 0 2em 0;
+    margin:0;
+
+    @include media(laptop){
+      padding:  1em;
+    }
+
 
   }
 
@@ -227,6 +224,7 @@ background-color: $pink;
   width: 100%;
   .zaddys__title{
     @include font-fam-size(3em, asli-3, 700, $main-black);
+    padding: 1em 0;
     text-align: center;
 
   }
@@ -235,15 +233,10 @@ background-color: $pink;
 
   .zaddys_block__item {
     border-radius: 20px;
-
     padding: 2em;
     .card-img{
-
       //box-shadow: 0 4px 30px rgba(0,0,0,.1);
     }
-
-
-    //margin: 1em;
     .thumbnail {
       padding: 0;
 
@@ -263,14 +256,14 @@ background-color: $pink;
 
 
 .music{
-  background: $skin-color;
-  //margin: 0;
+  background: $skin-color url("./svg/other-half.svg") no-repeat center  ;
+  background-size: cover;
   padding: 3em 0;
-  //padding: 3em 0;
   width: 100%;
  //background: $brown-dark;
   .music__title{
     @include font-fam-size(3em, asli-3, 700, $main-black);
+    padding: 1em 0;
     text-align: center;
   }
   .music_block{
@@ -283,12 +276,8 @@ background-color: $pink;
     }
 
    .music_block__item--title{
-
      @include font-fam-size(2em, $font-1, 500, $main-black);
    }
-
-
-
   }
 }
 .card{
@@ -298,21 +287,13 @@ background-color: $pink;
 
 
 .social-icons{
-  //background: #222222;
   background: $hard-pink;
   @include flex-display(flex, row, flex-start, 100%);
-
   .social-icons__a{
     padding: 2em 1em;
-
-
     .social-icons__a--img{
       margin: 0 auto;
       width:40px;
-
     }
-
-
   }
-
 }

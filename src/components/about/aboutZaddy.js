@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
+import {Element } from 'react-scroll';
 
 class AboutZaddy extends Component {
 
 
+
+
     render() {
+
         return (
-            <div className="main-page-about "
-                 // ref={this.aboutRef}
-            >
+            <Element name="about" className="main-page-about">
                 <div className="container">
                     <h2 className="main-page-about__title" data-scroll="toggle(.fromTopIn, .fromBottomOut)">About Zaddy's</h2>
                     <p className="main-page-about__p"
@@ -23,7 +25,7 @@ class AboutZaddy extends Component {
                         pit sweat.
                     </p>
                 </div>
-            </div>
+            </Element>
         );
     }
 }

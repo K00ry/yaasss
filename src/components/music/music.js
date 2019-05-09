@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Row,Container} from "react-bootstrap";
 import MusicCards from './musicCards'
-// import axios from 'axios';
+import {Element } from 'react-scroll';
 import {connect} from 'react-redux';
 import {initFetch} from '../../store/actions/action'
 
@@ -18,15 +18,13 @@ class Music extends Component {
 
 
         return (
-            <div className="music" >
+            <Element name="music" className="music" >
                 <h2 className="music__title">
                     Yaasss's Music
                 </h2>
 
                 <Container>
                 <Row className="music_block" >
-
-                    {/*<button onClick={this.props.init}> sallam</button>*/}
                     {this.props.musicCards.map(card => <MusicCards key={card._id}
                                                                   name={card.Name}
                                                                    img={card.img.url}
@@ -36,7 +34,7 @@ class Music extends Component {
                 </Row>
                 </Container>
 
-            </div>
+            </Element>
         );
     }
 }

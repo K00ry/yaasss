@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Nav, Navbar} from "react-bootstrap";
+import { Link} from 'react-scroll';
 
 class Toolbar extends Component {
 
@@ -13,10 +14,11 @@ class Toolbar extends Component {
                     <Nav className="mr-auto">
 
                     </Nav>
-                    <Nav>
-                        <Nav.Link href="#features">ABOUT ZADDY'Z</Nav.Link>
-                        <Nav.Link href="#pricing">MUSIC</Nav.Link>
-                        <Nav.Link href="#deets">SHOWS</Nav.Link>
+                    <Nav >
+
+                        <Link to="music" spy={true} smooth={true} offset={-50} duration={1500}><Nav.Link href="#">MUSIC</Nav.Link></Link>
+                        <Nav.Link href="#">SHOWS</Nav.Link>
+                        <Link to="about" spy={true} smooth={true} offset={-50} duration={1500}><Nav.Link href="#">ABOUT ZADDY'Z</Nav.Link></Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
