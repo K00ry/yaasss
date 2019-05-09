@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Row} from "react-bootstrap";
+import { Row,Container} from "react-bootstrap";
 import MusicCards from './musicCards'
 // import axios from 'axios';
 import {connect} from 'react-redux';
@@ -19,6 +19,11 @@ class Music extends Component {
 
         return (
             <div className="music" >
+                <h2 className="music__title">
+                    Yaasss's Music
+                </h2>
+
+                <Container>
                 <Row className="music_block" >
 
                     {/*<button onClick={this.props.init}> sallam</button>*/}
@@ -29,6 +34,7 @@ class Music extends Component {
                                                                   iframe={card.iframe}/>)}
 
                 </Row>
+                </Container>
 
             </div>
         );

@@ -3,6 +3,7 @@ import Toolbar from './components/toolbar';
 import MainBody from './components/mainBody/mainBody';
 import  Background from './components/background';
 import ScrollTrigger from 'scrolltrigger-classes'
+import AboutZaddy from './components/about/aboutZaddy'
 import './App.scss';
 
 
@@ -20,9 +21,11 @@ class App extends Component {
   render() {
       return (
           <div className="App">
+
               <Toolbar/>
               <Background/>
               <MainBody/>
+              <AboutZaddy/>
               <footer >
                   <div className="social-icons ">
                       <a
