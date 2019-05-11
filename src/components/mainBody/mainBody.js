@@ -1,13 +1,13 @@
 import React from 'react';
 import * as PropTypes from 'prop-types';
 // import {Grid,Row,Col,Thumbnail} from 'react-bootstrap';
-import About from '../about/aboutZaddys';
+import About from '../about/about';
 import Music from '../music/music';
 
 
 const MainBody = () => {
   return (
-    <div className="main container">
+    <div className="main ">
         <div className="introduction-block">
             <h3 className="introduction-block__text">
                 Did you just assume our genre? We are a falafel rock band from

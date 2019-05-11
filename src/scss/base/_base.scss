@@ -3,32 +3,37 @@
 }
 
 body{
-
 background-color: $pink;
 }
 
-
-
-
-
-
 .slider {
-  width: 100%;
+  //position: absolute ;
+  position: relative ;
+  max-width: 100%;
   height: 100vh;
-  position: absolute;
+
   top: 0;
   left: 0;
   z-index: -2;
   opacity: 0.7;
   //overflow: hidden;
-  //position: relative;
+
 }
 .slide1,
 .slide2,
 .slide3 {
   position: absolute;
-  width: 100%;
+ width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+
+
+
+  @include media(laptop){
+    background-attachment: fixed !important;
+
+  }
 }
 .slide1 {
   background: url('./img/1.jpg') no-repeat center;
@@ -36,6 +41,7 @@ background-color: $pink;
   background-size: cover;
   animation: fade 30s infinite;
   -webkit-animation: fade 30s infinite;
+
 }
 .slide2 {
   background: url('./img/2.png') no-repeat center;
@@ -98,14 +104,17 @@ background-color: $pink;
   margin: 0;
   background: $pink;
   border: none;
+  button{
+    border-color: transparent;
+  }
 
 }
  .navbar-brand {
-  @include font-fam-size(2.5em, asli, 300, $text-black);
+  @include font-fam-size(2.5em, asli, 300, $main-black);
 }
-.navbar-nav a {
-  @include font-fam-size(2em, asli, 100, #000);
-}
+//.navbar-nav a {
+//  @include font-fam-size(2em, asli, 100,$main-black);
+//}
 .navbar-default .navbar-toggle {
   border: none;
 }
@@ -116,6 +125,20 @@ background-color: $pink;
 .navbar-default .navbar-form {
   border: none;
 }
+.navbar-light .navbar-nav .nav-link {
+  @include font-fam-size(2em, asli, 100,$main-black);
+}
+.navbar-light .navbar-brand {
+  color: $main-black;
+}
+.navbar-light .navbar-brand {
+  margin-left: 1rem;
+ img{
+   max-width:100%;
+   height: auto;
+ }
+}
+
 
 .main{
   //position: fixed;
@@ -126,17 +149,21 @@ background-color: $pink;
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: -1;
+  //z-index: -1;
   //opacity: 0.5;
-  //overflow: hidden;
-  //position: fixed;
+  overflow: hidden;
+  position: absolute;
 
 
   @include flex-display(flex, column, space-around, 100%);
   .logoBlock {
-    background: transparent;
+    //background: transparent;
     @include flex-display(flex, row, space-around, 100%);
-    padding: 7em 0 0 0;
+    @include media(tablet) {
+      padding: 7em 0 0 0;
+
+    }
+
     .logoBlock__img {
       max-width: 100%;
       height: auto;
@@ -151,7 +178,7 @@ background-color: $pink;
 
   .introduction-block__text {
     //background: #f4d6da;
-    @include font-fam-size(3em, asli, 300, black );
+    @include font-fam-size(3em, asli, 300, $main-black );
     -webkit-text-stroke: 1px $pink;
     text-align: center;
     @include media(tablet) {
@@ -162,44 +189,66 @@ background-color: $pink;
 
 
 .main-page-about{
-  background: $skin-color;
+  background: $skin-color url("./svg/half-brown.svg") no-repeat center  ;
+  background-size: cover;
+
   margin: 0;
   padding: 0;
   width: 100%;
+
   .main-page-about__title{
     text-align: center;
     padding: 1em 0;
-    @include font-fam-size(3em, asli-3, bold, $text-black);
+    @include font-fam-size(3em, asli-3, bold, $main-black);
     margin: 0;
 
   }
   .main-page-about__p{
-    @include font-fam-size(2em, asli-3, 500, $text-black);
-    text-align: center;
-    margin: 0;
-    padding:  1em;
+    @include font-fam-size(2em, asli-3, 500, $main-black);
+    text-align: left;
+    padding: 0 0 2em 0;
+    margin:0;
+
+    @include media(laptop){
+      padding:  1em;
+    }
+
 
   }
 
 }
 .zaddys{
-  background: $skin-color;
+  background: $skin-color url("./svg/half-brown.svg") no-repeat center  ;
+  background-size: cover;
   margin: auto;
-  //padding:  0;
   width: 100%;
-  background: $pink;
+  .zaddys__title{
+    @include font-fam-size(3em, asli-3, 700, $main-black);
+    padding: 1em 0;
+    text-align: center;
+
+  }
 .zaddys_block {
   margin: 0;
 
   .zaddys_block__item {
+    border-radius: 20px;
     padding: 2em;
+    .card-img{
+      //box-shadow: 0 4px 30px rgba(0,0,0,.1);
+    }
     .thumbnail {
       padding: 0;
+
     }
 
   }
   .zaddys_block__item--title{
-    @include font-fam-size(2em, asli-3, 500, $text-black);
+    border-radius: 2px;
+    background-color: #FFF;
+    padding: 1em 0;
+    @include font-fam-size(2em, asli-3, 500, $main-black);
+    margin:0;
   }
 }
 }
@@ -207,47 +256,44 @@ background-color: $pink;
 
 
 .music{
-  background: $skin-color;
-  margin: 0;
-  padding-top: 3em;
-  //padding: 3em 0;
+  background: $skin-color url("./svg/other-half.svg") no-repeat center  ;
+  background-size: cover;
+  padding: 3em 0;
   width: 100%;
- background: $pink;
+ //background: $brown-dark;
+  .music__title{
+    @include font-fam-size(3em, asli-3, 700, $main-black);
+    padding: 1em 0;
+    text-align: center;
+  }
   .music_block{
     margin: 0;
     .music_block__item{
-      padding: 0;
+      padding: 2em;
       .thumbnail{
         padding: 0;
       }
     }
 
    .music_block__item--title{
-     @include font-fam-size(2em, $font-1, 500, $text-black);
+     @include font-fam-size(2em, $font-1, 500, $main-black);
    }
-
-
-
   }
+}
+.card{
+  height: 100%;
+  border: none;
 }
 
 
 .social-icons{
-  //background: #222222;
-  background: $skin-color;
-  @include flex-display(flex, row, space-around, 100%);
-
+  background: $hard-pink;
+  @include flex-display(flex, row, flex-start, 100%);
   .social-icons__a{
     padding: 2em 1em;
-
-
     .social-icons__a--img{
       margin: 0 auto;
       width:40px;
-
     }
-
-
   }
-
 }
