@@ -1,26 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Nav, Navbar} from "react-bootstrap";
+import { Link} from 'react-scroll';
+
+class Toolbar extends Component {
 
 
-const Toolbar = () => {
-    return (
+    render() {
+        return (
+            <Navbar collapseOnSelect expand="lg" fixed="top" >
+                <Navbar.Brand href="#home"><img alt="camel lip logo" src={process.env.PUBLIC_URL+ "img/camel-lip-logo.png"}/></Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
 
-        <Navbar collapseOnSelect expand="lg"  >
-        <Navbar.Brand href="#home">YAASSS</Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-
-        </Nav>
-        <Nav>
-            <Nav.Link href="#features">ABOUT ZADDY'Z</Nav.Link>
-            <Nav.Link href="#pricing">MUSIC</Nav.Link>
-            <Nav.Link href="#deets">SHOWS</Nav.Link>
-        </Nav>
-    </Navbar.Collapse>
-</Navbar>
-    );
-};
+                    </Nav>
+                    <Nav>
+                        <Link to="music" spy={true} smooth={true} offset={-50} duration={1500}><Nav.Link href="#">MUSIC</Nav.Link></Link>
+                        <Link to="about" spy={true} smooth={true} offset={-50} duration={1500}><Nav.Link href="#">ABOUT ZADDY'Z</Nav.Link></Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        );
+    }
+}
 
 export default Toolbar;
 

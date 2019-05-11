@@ -4,7 +4,7 @@ import Intro from './intro';
 
 
 const Background = () => {
-    return <>
+    return <section className="jumbo">
         <div className='slider'>
             <div className='slide1'>
             </div>
@@ -15,7 +15,7 @@ const Background = () => {
         </div>
         <Intro/>
 
-    </>
+    </section>
 };
 
 export default Background;
